@@ -3,15 +3,13 @@ body{
     margin: 0;
     height: 100vh;
 }
-.rightAlign{
-    text-align: right;
-}
 
 .container{
     margin: auto;
     margin-top: 50px;
     width: fit-content;
     border: 3px solid black;
+    
     .text{
         padding-top: 10px;
     }
@@ -25,25 +23,31 @@ body{
 $p_height: 42px;
 $p_width: 42px;
 .poolContainer{
-    width: auto;
     text-align: center;
 
     .poolDriver{
         margin: auto;
         
         .driverImg{
-            height: $p_height + 10;
-            width: $p_width + 10; 
+            height: $p_height + 20;
+            width: $p_width + 20; 
         }
     }
 
     .passengerInfo {
         display: inline-block;
+        position: relative;
+        padding: 0 20px;
+        
         .passengerLeft{
-            border: 3px solid black;           
-            direction: rtl;
+            position: absolute;
+            right: 0;            
+            bottom: $p_height+5px;
         }
         .passengerRight{
+            position: absolute;
+            left: 0;
+            bottom: $p_height+5px;
         }
         .passengerImg{
             height: $p_height;
@@ -52,8 +56,8 @@ $p_width: 42px;
     }
     .passengerBox{
         display: inline-block;
-        height: $p_height;
-        width: $p_width;
+        height: $p_height + 30;
+        width: $p_width + 20;
         border: 8px solid black;
         background: red;
     }
