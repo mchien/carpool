@@ -1,0 +1,60 @@
+body{
+    background: rgb(207, 207, 207);
+    margin: 0;
+    height: 100vh;
+}
+.rightAlign{
+    text-align: right;
+}
+
+.container{
+    margin: auto;
+    margin-top: 50px;
+    width: fit-content;
+    border: 3px solid black;
+    .text{
+        padding-top: 10px;
+    }
+    .button{
+        display: grid;
+        margin: 10px auto;
+        align-self: center;
+    }
+}
+
+$p_height: 42px;
+$p_width: 42px;
+.poolContainer{
+    width: auto;
+    text-align: center;
+
+    .poolDriver{
+        margin: auto;
+        
+        .driverImg{
+            height: $p_height + 10;
+            width: $p_width + 10; 
+        }
+    }
+
+    .passengerInfo {
+        display: inline-block;
+        .passengerLeft{
+            border: 3px solid black;           
+            direction: rtl;
+        }
+        .passengerRight{
+        }
+        .passengerImg{
+            height: $p_height;
+            width: $p_width;            
+        }
+    }
+    .passengerBox{
+        display: inline-block;
+        height: $p_height;
+        width: $p_width;
+        border: 8px solid black;
+        background: red;
+    }
+}

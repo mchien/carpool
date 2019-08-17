@@ -1,0 +1,67 @@
+body {
+  background: #cfcfcf;
+  margin: 0;
+  height: 100vh;
+}
+
+.rightAlign {
+  text-align: right;
+}
+
+.container {
+  margin: auto;
+  margin-top: 50px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 3px solid black;
+}
+
+.container .text {
+  padding-top: 10px;
+}
+
+.container .button {
+  display: -ms-grid;
+  display: grid;
+  margin: 10px auto;
+  -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.poolContainer {
+  width: auto;
+  text-align: center;
+}
+
+.poolContainer .poolDriver {
+  margin: auto;
+}
+
+.poolContainer .poolDriver .driverImg {
+  height: 52px;
+  width: 52px;
+}
+
+.poolContainer .passengerInfo {
+  display: inline-block;
+}
+
+.poolContainer .passengerInfo .passengerLeft {
+  border: 3px solid black;
+  direction: rtl;
+}
+
+.poolContainer .passengerInfo .passengerImg {
+  height: 42px;
+  width: 42px;
+}
+
+.poolContainer .passengerBox {
+  display: inline-block;
+  height: 42px;
+  width: 42px;
+  border: 8px solid black;
+  background: red;
+}
+/*# sourceMappingURL=style.css.map */
